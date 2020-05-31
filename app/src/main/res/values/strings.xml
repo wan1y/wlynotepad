@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">wlynotepad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_menu_notes">笔记</string>
+    <string name="tab_menu_alarm">待办</string>
+    <string name="tab_menu_mine">我的</string>
+    <string name="tab_menu_setting">设置</string>
+
+    <string name="tab_menu_picture">图片</string>
+    <string name="tab_menu_font">字体</string>
+    <string name="tab_menu_audio">语音</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="new_alarm">新建待办事项</string>
+    <string name="modify_alarm">修改待办事项</string>
+    <string name="select_time">响应时间</string>
+    <string name="current_time">创建时间</string>
+    <string name="alarmbiaoti">标题</string>
+    <string name="alarmtext">正文</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_new_alarm">NewAlarmActivity</string>
+</resources>

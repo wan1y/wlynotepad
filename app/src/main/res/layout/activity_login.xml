@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.wly.notepad.Activity.LoginActivity"
+    android:background="@mipmap/bg_skin1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+        <com.wly.notepad.Util.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/appicon2" />
+        <Space
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/appname2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <EditText
+            android:id="@+id/idInput"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@drawable/edit_shape"
+            android:ems="10"
+            android:hint="请输入账号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:theme="@style/MyEditText"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_shape"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:theme="@style/MyEditText"
+            ></EditText>
+        <Space
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:text="登录"
+                />
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/buttonReg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="注册"
+                android:background="@drawable/btn_shape"
+                />
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+        <Space
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

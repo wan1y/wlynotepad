@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_skin3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--顶部导航栏-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notelist_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@mipmap/head_skin" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="wly·notepad"/>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        <!--搜索框-->
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入关键词查询！"
+            android:imeOptions="actionSearch"
+            android:theme="@style/MyEditText"
+            android:singleLine="true" />
+
+        <ListView
+            android:id="@+id/notes_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="#FFF"
+            android:dividerHeight="15dp"
+            android:paddingLeft="5dp">
+        </ListView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@mipmap/icon_add"
+        app:backgroundTint="@color/clearorange"
+        app:rippleColor="@color/LightSkyBlue"
+        app:pressedTranslationZ="10dp"
+        />
+
+</FrameLayout>

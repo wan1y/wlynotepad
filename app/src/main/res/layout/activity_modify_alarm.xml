@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_skin2"
+    android:orientation="vertical"
+    tools:context="com.wly.notepad.Activity.ModifyAlarmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/btn_cancel_modify"
+            android:src="@mipmap/back_icon"
+            android:background="@null"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="15dp"
+            android:text="@string/modify_alarm"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <ImageButton
+            android:id="@+id/btn_set_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:background="@null"
+            android:paddingRight="15dp"
+            android:src="@mipmap/yes" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/alarmbiaoti"
+            android:textColor="@color/current_time_text"
+            android:textSize="15sp"
+            android:layout_weight="0.1"/>
+        <EditText
+            android:id="@+id/alarmbiaoti_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:theme="@style/MyEditText"
+            android:layout_weight="1"/>
+    </LinearLayout>>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_date_modify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/current_time"
+            android:textColor="@color/current_time_text"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_new_time_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_time_modify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="选择时间"
+            android:textColor="@color/current_time_text"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_selected_time_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text=""
+        android:textColor="@color/select_title_text"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/alarmtext"
+            android:textColor="@color/current_time_text"
+            android:textSize="15sp"
+            android:layout_weight="0.1"/>
+        <EditText
+            android:id="@+id/alarmtext_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:theme="@style/MyEditText"
+            android:layout_weight="1"/>
+    </LinearLayout>>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textColor="@color/select_title_text"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"/>
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"/>
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</LinearLayout>

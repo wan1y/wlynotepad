@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_skin3"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/note_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@mipmap/back_icon"
+        android:navigationIcon="@mipmap/back_icon"
+        android:background="@mipmap/head_skin">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/btn_ok"
+            android:src="@mipmap/yes"
+            android:paddingRight="15dp"
+            android:background="#00000000"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/addnotes_layout"
+        android:layout_below="@id/note_toolbar">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择标签"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/ic_none"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:id="@+id/tag"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/showtime"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addnotes_layout"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top"
+        android:theme="@style/MyEditText"
+        android:hint="记录点滴。。。" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_note"
+        android:layout_above="@id/addnotes_navigation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/imageContent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/addnotes_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:background="@mipmap/bottom_skin"
+        app:menu="@menu/editnotes_navigation"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.com.wly.notepad">
+
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name="com.wly.notepad.Manager.datepicker.AlarmReceiver">
+            <intent-filter>
+                <action android:name="MYALARMRECEIVER" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.wly.notepad.Activity.MainActivity"></activity>
+        <activity android:name="com.wly.notepad.Activity.NewAlarmActivity" />
+        <activity android:name="com.wly.notepad.Activity.AddNotesActivity" />
+        <activity android:name="com.wly.notepad.Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.wly.notepad.Activity.LoginActivity2"/>
+
+        <activity android:name="com.wly.notepad.Activity.RegisterActivity"/>
+        <activity android:name="com.wly.notepad.Activity.UpdateInformationActivity"></activity>
+        <activity android:name="com.wly.notepad.Activity.ModifyAlarmActivity" />
+        <activity android:name="com.wly.notepad.Activity.AlarmAlertActivity"></activity>
+        <activity android:name="com.wly.notepad.Activity.CheckNoteActivity"></activity>
+    </application>
+
+</manifest>
